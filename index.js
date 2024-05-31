@@ -5,7 +5,7 @@ const cors = require("cors");
 
 const app = express();
 const isDev = app.settings.env === 'development'
-const URL = isDev ? 'http://localhost:3000' : 'Production Link'
+const URL = isDev ? 'http://localhost:3000' : 'https://online-drawing-tool-g8lpdb6nt-shubhu0767s-projects.vercel.app'
 app.use(cors({ origin: URL }));
 const httpServer = createServer(app);
 
